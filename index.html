@@ -186,19 +186,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 7px;
 
   background: #ff2f7d;
   color: #000;
 
   font-family: 'Orbitron', 'Montserrat', sans-serif;
-  font-size: clamp(0.72rem, 2vw, 1.05rem);
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
 
   text-decoration: none;
   padding: 0.75rem 1rem;
 
   border-radius: 50px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   transition: background 0.2s, color 0.2s, transform 0.2s;
@@ -209,34 +209,34 @@
 
   text-align: center;
   white-space: nowrap;
-  overflow: hidden;
-}
-
-.btn-tickets:hover {
-  background: #ff5a9d;
-  color: #000;
-  transform: scale(1.02);
 }
 
 
 /* Mobile */
 @media (max-width: 600px) {
   .btn-tickets {
-    font-size: 0.72rem;
-    padding: 0.7rem 0.6rem;
-    letter-spacing: 0.025em;
-    gap: 4px;
+    font-size: 0.9rem;
+    padding: 0.78rem 0.7rem;
+    letter-spacing: 0.02em;
+    gap: 5px;
   }
 }
 
 
-/* Very small mobile screens */
+/* Very small mobile */
 @media (max-width: 380px) {
   .btn-tickets {
-    font-size: 0.62rem;
-    padding: 0.65rem 0.4rem;
-    letter-spacing: 0.015em;
+    font-size: 0.82rem;
+    padding: 0.72rem 0.5rem;
+    letter-spacing: 0.01em;
   }
+}
+
+
+.btn-tickets:hover {
+  background: #ff5a9d;
+  color: #000;
+  transform: scale(1.02);
 }
 
     .vip-line {
