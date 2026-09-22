@@ -146,12 +146,11 @@
 
     /* City ticket blocks (two sections: info + separate Get Tickets button) */
     .city-block {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
-    }
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+}
 
     .city-info {
       display: flex;
@@ -187,23 +186,57 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
+
   background: #ff2f7d;
-  color: #ffffff;
+  color: #000;
+
+  font-family: 'Orbitron', 'Montserrat', sans-serif;
+  font-size: clamp(0.72rem, 2vw, 1.05rem);
+
   text-decoration: none;
-  padding: 16px 28px;
+  padding: 0.75rem 1rem;
+
   border-radius: 50px;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  white-space: nowrap;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+
   text-align: center;
-  transition: all 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .btn-tickets:hover {
-  background: #ff4d91;
-  transform: scale(1.03);
+  background: #ff5a9d;
+  color: #000;
+  transform: scale(1.02);
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .btn-tickets {
+    font-size: 0.72rem;
+    padding: 0.7rem 0.6rem;
+    letter-spacing: 0.025em;
+    gap: 4px;
+  }
+}
+
+
+/* Very small mobile screens */
+@media (max-width: 380px) {
+  .btn-tickets {
+    font-size: 0.62rem;
+    padding: 0.65rem 0.4rem;
+    letter-spacing: 0.015em;
+  }
 }
 
     .vip-line {
@@ -289,7 +322,7 @@
 
         <hr class="divider" />
 
-        <a href="https://fitooryeg.eventbrite.ca" target="_blank" class="btn-tickets">
+       <a href="https://fitooryeg.eventbrite.ca" target="_blank" class="btn-tickets">
   🎟️ EDMONTON 10 OCTOBER - GET TICKETS
 </a>
 
